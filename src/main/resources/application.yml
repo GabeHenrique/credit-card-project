@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: credit-card-project
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: credit-card-project
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    tags-sorter: alpha
+logging:
+  level:
+    br.com.f1rst.cartaoapi: debug
+    org.springframework.web: debug
+    org.springframework.data.mongodb: debug
