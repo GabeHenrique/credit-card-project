@@ -51,7 +51,7 @@ public class ProductDto {
   }
 
   public BigDecimal getInstallmentValue() {
-    if (installments != null && annualFee != null) {
+    if (installments != null && annualFee != null && installments > 0 && annualFee.compareTo(BigDecimal.ZERO) > 0) {
       return annualFee.divide(BigDecimal.valueOf(installments), 2, HALF_EVEN);
     } else {
       return BigDecimal.ZERO;
