@@ -1,4 +1,4 @@
-___# Projeto Cartão de Crédito
+# Projeto Cartão de Crédito
 
 Este é um projeto para demonstrar a implementação de um sistema de contratação de cartão de crédito usando
 Spring Boot e MongoDB, como parte do processo seletivo para a vaga de desenvolvedor Java
