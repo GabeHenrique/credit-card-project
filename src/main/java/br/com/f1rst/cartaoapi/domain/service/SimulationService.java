@@ -22,7 +22,7 @@ public class SimulationService {
       throw new ResourceNotFoundException("there.are.no.products.to.simulate");
     }
     var customer = customerRepository.findByCpfCnpj(customerCpf).map(CustomerDto::fromEntity).orElseThrow(
-        () -> new ResourceNotFoundException("unregistered.customer"));
+        () -> new ResourceNotFoundException("customer.not.found"));
     return new SimulationDto().toSimulationDto(customer, products);
   }
 }

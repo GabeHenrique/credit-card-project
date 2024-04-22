@@ -23,6 +23,8 @@ public class FormalizationService {
       creditCardService.createCreditCard(customer, formalizationDto.getProductId());
       return new ConfirmationDto(true,
           "Parabéns! Seu contrato foi formalizado com sucesso! Em breve você receberá o seu cartão de crédito!");
+    } catch (ResourceNotFoundException e) {
+      throw e;
     } catch (Exception e) {
       return new ConfirmationDto(false, "Ocorreu um erro ao formalizar o contrato. Por favor, tente novamente.");
     }

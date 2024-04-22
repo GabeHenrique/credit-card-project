@@ -46,9 +46,4 @@ public class CustomerService {
         customerRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("customer.not.found"));
     customerRepository.delete(cliente);
   }
-
-  public CustomerDto findCustomerByCpfCnpj(String cpfCnpj) {
-    return customerRepository.findByCpfCnpj(cpfCnpj).map(CustomerDto::fromEntity).orElseThrow(
-        () -> new ResourceNotFoundException("customer.not.found"));
-  }
 }
