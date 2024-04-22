@@ -21,6 +21,8 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
 Este projeto utiliza o MongoDB como banco de dados. Certifique-se de ter instalado o MongoDB em sua máquina ou
 baixe baixe o MongoDB [aqui](https://www.mongodb.com/try/download/community) e siga as instruções de instalação.
 
+Certifique-se de que o MongoDB está em execução em sua máquina na porta 27017 antes de executar o projeto.
+
 ## Executando o Projeto
 
 Para compilar e executar o projeto, use o seguinte comando:
